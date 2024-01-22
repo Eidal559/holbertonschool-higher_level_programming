@@ -1,1 +1,1 @@
-# holbertonschool-higher_level_programming
+# holbertonschool second trimester python tasks
