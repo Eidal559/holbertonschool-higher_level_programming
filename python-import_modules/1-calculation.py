@@ -1,30 +1,10 @@
 #!/usr/bin/python3
-def add(x, y):
-    return x + y
+if __name__ == "__main__":
+    from calculator_1 import add, sub, mul, div
 
-def subtract(x, y):
-    return x - y
-
-def multiply(x, y):
-    return x * y
-
-def divide(x, y):
-    if y != 0:
-        return x / y
-    else:
-        return "Error: Cannot divide by zero"
-
-a = 10
-b = 5
-
-from calculator_1 import add, subtract, multiply, divide
-
-result_add = add(a, b)
-result_subtract = subtract(a, b)
-result_multiply = multiply(a, b)
-result_divide = divide(a, b)
-
-print("Addition: {} + {} = {}".format(a, b, result_add))
-print("Subtraction: {} - {} = {}".format(a, b, result_subtract))
-print("Multiplication: {} * {} = {}".format(a, b, result_multiply))
-print("Division: {} / {} = {}".format(a, b, result_divide))
+    a = 10
+    b = 5
+    print('{:d} + {:d} = {:d}'.format(a, b, (add(a, b))))
+    print('{:d} - {:d} = {:d}'.format(a, b, (sub(a, b))))
+    print('{:d} * {:d} = {:d}'.format(a, b, (mul(a, b))))
+    print('{:d} / {:d} = {:d}'.format(a, b, (div(a, b))))
