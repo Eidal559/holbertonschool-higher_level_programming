@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-def multiply_list_map(my_list, multiplier):
-    # Use map() to apply the multiplication to each element in the list
-    return list(map(lambda x: x * multiplier, my_list))
+def multiply_list_map(my_list=[], number=0):
+    return list(map(lambda x: x * number, my_list))
 
 # Example usage:
 if __name__ == "__main__":
